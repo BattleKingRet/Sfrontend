@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600&display=swap');
+// urbanist and inter
+.App {
+    background-color: var(--page-background);
+}
+.light {
+    
+    --primary-light:#8BE348;
+    --primary-mid:#81CD47;
+    --primary-dark:#6FB43A;
+
+    --secondary-light:#FFB802;
+    --secondary-mid:#FFE604;
+    --secondary-dark:#FF9700;
+
+    --error-light:#FF7E86;
+    --error-mid:#FE3F61;
+    --error-dark:#FD0025;
+
+    // --primary-gradient:
+    --green-color:#81CD47;
+    --red-color:#FF4242;
+    --dark-1:#111111;
+    --dark-2:#555555;
+    --dark-2-5:#ffffff;
+    --dark-3:#777777;
+    --dark-4:#999999;
+    --light-1:#FFFFFF;
+    --light-2:#EEEEEE;
+    --light-3:#DDDDDD;
+    --light-4:#CCCCCC;
+    --dark-red:#C60202;
+    --dark-green:#3FBFA0;
+
+    //title and active link
+    --active-link-color:#222222;
+    --label-color:#555555;
+    --placeholder-color:#757575;
+    --line-color:#DCDCDC;
+    --input-background:#F0F0F0;
+    --element-background:#F8F8F8;
+
+    --nav-items:#04091e;
+    --page-background:#DEDEDE;
+}
+.dark {
+    --nav-items:#EEEEEE;
+    --page-background:#2A2A2E;
+    --light-1:#2A2A2E;
+    --active-link-color:#EEEEEE; //light-1
+    --dark-green:#3FBFA0;
+    --dark-1:#FFFFFF; //light-1
+    --dark-2:#CCCCCC; //light-4
+    --dark-2-5:#444444;
+}
+
+
+$transition: all 0.5s ease-in-out;
+// Sass Mixins
+@mixin displayFlex($align, $justify) {
+    display: flex !important;
+    align-items: $align !important;
+    justify-content: $justify !important; 
+}
+@mixin centerFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// responsive breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// Sass Mixins
+@mixin image($object-fit) {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: $object-fit;
+}
+
+@mixin mQ($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin mQMin($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}

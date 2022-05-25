@@ -1,0 +1,32 @@
+.live-auctions-section {
+    margin-top: 200px;
+    .live-auctions-container{
+      padding-bottom:60px;
+      border-bottom:2px solid #CCCCCC;;
+    }
+    .live-auctions-cards {
+        margin-top: 60px;
+        .live-auctions-col {
+            @include centerFlex();
+        }
+    }
+
+    .view-more-btn {
+      max-width: 142px;
+      padding: 6px;
+      margin:0 auto;
+        .view {
+          background: inherit;
+          padding:6px;
+        /* Colors/Basic/Interface 2 */
+        color: #747681;
+        border: 1px solid #747681;
+        box-sizing: border-box;
+        border-radius: 36px;
+        text-align:center;
+      }
+        .view:hover {
+          cursor: pointer;
+        }
+    }
+}

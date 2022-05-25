@@ -1,0 +1,28 @@
+.todays-pick-row {
+    .todays-pick-col {
+        @include displayFlex(center, center);
+    }
+    .btn-col {
+        justify-content: center;
+        margin-top: 72px;
+        display: flex;
+        @include displayFlex(center, center);
+        .explore-moreBtn {
+            background: linear-gradient(
+                207.67deg,
+                #22c16c 3.43%,
+                #0a9c4d 104.7%
+            ) !important;
+            border-radius: 8px !important;
+            padding: 10px 30px;
+            color: white;
+            @include displayFlex(center, center);
+            // border: 2px solid inherit !important;
+            font-size: 16px !important;
+            line-height: 24px;
+            @include mQ($xl) {
+                font-size: 15px;
+            }
+        }
+    }
+}

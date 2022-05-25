@@ -1,0 +1,70 @@
+.top-collections-container {
+    .top-collection-row {
+        .top-collection-col {
+            margin-bottom: 40px;
+            .top-collection-box {
+                @include displayFlex(center, flex-start);
+                flex-direction: row;
+                .top-image {
+                    img {
+                        height: 72px;
+                        margin: 0 12px;
+                        @include mQ($sm) {
+                          height:40px;
+                          margin:0 4px;
+                        }
+                    }
+
+                }
+                .collection_name {
+                    @include displayFlex(flex-start, center);
+                    flex-direction: column;
+                    h2 {
+                        margin: 0;
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 130%;
+                        color: #04091e;
+                        @include mQ($sm) {
+                          font-size: 16px !important;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        font-family: Urbanist;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: #747681;
+                    }
+                }
+            }
+        }
+    }
+    .view-more-btn {
+      max-width: 142px;
+      padding: 6px;
+      margin:0 auto;
+        .view {
+          background: var(--light-1);
+          padding:6px;
+        /* Colors/Basic/Interface 2 */
+        color: #747681;
+        border: 1px solid #747681;
+        box-sizing: border-box;
+        border-radius: 36px;
+        text-align:center;
+      }
+        .view:hover {
+          cursor: pointer;
+        }
+    }
+    .doubleLine {
+      img {
+        width:100%;
+      }
+    }
+}

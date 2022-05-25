@@ -1,0 +1,78 @@
+.nft-reviews-section {
+    background-image: url(../../assets/images/walletSupportBackground.svg);
+    min-height: 650px;
+    height: auto;
+    margin-top: 183px;
+    @include displayFlex(center, center);
+
+    .nft-reviews-container {
+        .nft-reviews-row {
+            .nft-reviews-col {
+                // @include displayFlex(center,center);
+                width:100%;
+                h2 {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 48px !important;
+                    line-height: 140%;
+                    text-align: center;
+                    color: #ffffff;
+                    margin-bottom:48px;
+                }
+                .nft-reviews-box {
+                  background: #F0F0F0;
+                  border-radius: 15px;
+                  padding:35px 26px;
+                  width: 90%;
+                  min-height: 286px;
+                  height:auto;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  @include mQ($xl) {
+                      width:92%;
+                  }
+                  .reviews-top {
+                      @include displayFlex(center,space-between);
+                      flex-direction: row;
+                  }
+                  .reviews-mid {
+                      margin:23px 0 0 0;
+                  }
+                  .reviews-bot {
+                    @include displayFlex(center, flex-start);
+                    flex-direction: row;
+                    padding: 24px 0;
+                    img {
+                        margin-right: 12px;
+                    }
+                    div {
+                        h3 {
+                            margin: 0;
+                            font-family: Urbanist;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: #000000;
+                        }
+                        p {
+                            margin: 0;
+                            font-family: Urbanist;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #8393af;
+                            span {
+                                color: #000000;
+                            }
+                        }
+                    }
+                  }
+                }
+            }
+        }
+    }
+}

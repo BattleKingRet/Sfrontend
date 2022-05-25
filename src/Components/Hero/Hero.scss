@@ -1,0 +1,146 @@
+.hero-section-container {
+    min-height: 500px;
+    height: auto;
+    @include centerFlex();
+    margin: 90px auto;
+    .hero-section-row {
+        height: 100%;
+        position: relative;
+        width: 100vw;
+        .hero-section-col-left {
+            // margin-right: 130px;
+            border-right: 50px solid transparent;
+            @include displayFlex(center, flex-start);
+
+            @include mQ($md) {
+                margin: 70px 0 102px 0;
+                border-right: 0px solid transparent;
+            }
+
+            .hero-left {
+                h1 {
+                    color: var(--dark-1);
+                    margin-bottom: 16px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.02em;
+
+                    span {
+                        position: relative;
+
+                        .flowerRing {
+                            position: absolute;
+                            left: -15px;
+                            top: -34px;
+                            height: 106px;
+
+                            @include mQ($lg) {
+                                height: 86px;
+
+                            }
+
+                            @include mQ($md) {
+                                height: 76px;
+                                left: -9px;
+                                top: -26px;
+                            }
+                        }
+                    }
+
+                }
+
+                h2 {
+                    color: var(--dark-2);
+                    margin-bottom: 50px;
+                }
+
+                .hero-left-btns {
+                    @include displayFlex(center, flex-start);
+
+                    .explore {
+                        background: linear-gradient(230.11deg,
+                                #22c16c 5.93%,
+                                #0a9c4d 98.01%,
+                                #0a9c4d 98.02%);
+                        border-radius: 8px;
+                        color: var(--light-1);
+                        padding: 10px 30px;
+                        margin-right: 48px;
+
+                        @include mQ($lg) {
+                            margin-right: 4px;
+                            padding: 10px 12px;
+                        }
+
+                        @include mQ($sm) {
+                            margin-right: 10px;
+                            padding: 10px 10px;
+                        }
+                    }
+
+                    .createOwn {
+                        border: 1px solid #81cd47;
+                        border-radius: 40px;
+                        color: var(--dark-1);
+                        padding: 10px 30px;
+
+                        @include mQ($sm) {
+                            padding: 10px 10px;
+                        }
+
+                        @include mQ($lg) {
+                            margin-right: 4px;
+                            padding: 10px 12px;
+                        }
+                    }
+
+                    .createOwn:hover {
+                        background-color: #81cd47;
+                        transition: all .4s ease-in;
+                    }
+
+                    div:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .hero-section-col-right {
+            position: relative;
+
+            .carouselMask {
+                position: absolute;
+                top: -7%;
+                left: -23%;
+                width: 100%;
+                height: 119%;
+            }
+
+            .hero-carousel-container {
+                // height: 400px;
+
+                .hero-carousel-col {
+                    height: 400px;
+                    width: 100%;
+                    @include displayFlex(center, center);
+
+                    img {
+                        height: 100%;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+
+        .hero-line img {
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
+}

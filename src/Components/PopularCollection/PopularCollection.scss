@@ -1,0 +1,89 @@
+.popular-collection-section {
+  
+    .popular-collection-container {
+      padding-bottom: 60px;
+      border-bottom: 2px solid #CCCCCC;
+        .popular-collection-row {
+            .popular-collection-col {
+                @include displayFlex(center, center);
+                margin-bottom: 20px;
+                .popularCollectionBox {
+                    background: rgba(255, 255, 255, 0.5);
+                    border: 1px solid #81cd47;
+                    box-sizing: border-box;
+                    backdrop-filter: blur(40px);
+                    border-radius: 24px;
+                    max-width: 370px;
+                    width: 370px;
+                    @include mQ($md) {
+                        max-width: 100%;
+                    width: 100%;
+                    }
+                    .popularCollectionBoxImages {
+                        @include displayFlex(center, center);
+                    }
+                    .popularCollectionBoxDetails {
+                        @include displayFlex(center, flex-start);
+                        flex-direction: row;
+                        padding: 24px;
+                        img {
+                            margin-right: 12px;
+                        }
+                        div {
+                            h3 {
+                                margin: 0;
+                                font-family: Urbanist;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 24px;
+                                line-height: 32px;
+                                color: #000000;
+                            }
+                            p {
+                                margin: 0;
+                                font-family: Urbanist;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #8393af;
+                                span {
+                                    color: #000000;
+                                }
+                            }
+                        }
+                    }
+                }
+                .popularCollectionBox:hover {
+                    background: rgba(209, 255, 173, 0.3);
+                    border: 1px solid #81cd47;
+                    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+        .btn-col {
+            justify-content: center;
+            margin-top:72px;
+            display: flex;
+            @include displayFlex(center, center);
+            .explore-moreBtn {
+
+                background: linear-gradient(
+                    207.67deg,
+                    #22c16c 3.43%,
+                    #0a9c4d 104.7%
+                ) !important;
+                border-radius: 8px !important;
+                padding: 10px 30px;
+                color: white;
+                @include displayFlex(center, center);
+                // border: 2px solid inherit !important;
+                font-size: 16px !important;
+                line-height: 24px;
+                @include mQ($xl) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

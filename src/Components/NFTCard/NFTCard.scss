@@ -1,0 +1,92 @@
+.nft-card {
+    position: relative;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    max-width: 100%;
+    width:100%;
+    background: var(--dark-2-5);
+    border-radius: 15px;
+    margin-bottom:30px;
+    .nft-image {
+        width: 100%;
+        padding: 18px 30px 38px 30px;
+        border-radius: 14.7215px;
+        z-index: 11;
+        position: relative;
+        
+    }
+    .nftBack {
+        filter: blur(61.3395px);
+        background: #0d0707;
+        position: absolute;
+        height: 185px;
+        width: 152px;
+        z-index: 10;
+        top: 43px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nft-card-detail {
+        padding: 0 30px 26px 30px;
+        h3 {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: -0.005em;
+            color: var(--active-link-color);
+            @include displayFlex(center, flex-start);
+        }
+        .nft-card-description {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15.9483px;
+            line-height: 140%;
+            color: #8a8e85;
+        }
+        .nft-card-price {
+          @include displayFlex(center,flex-start);
+            .nft-price {
+                // font-family: Neue Haas Grotesk Display Pro;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.2266px;
+                line-height: 22px;
+                color: #151d0c;
+                margin-right:40px;
+            }
+            .price-increase {
+                // font-family: Neue Haas Grotesk Display Pro;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18.2266px;
+                line-height: 22px;
+                text-align: right;
+                color: #19976a;
+            }
+        }
+    }
+    .nft-card-btn-container {
+        @include displayFlex(center, flex-start);
+        .btn_grey {
+          margin-right:12px;
+          img {
+            margin:0 2px 2px 0;
+            @include mQ($sm) {
+              height: 14px;
+              margin:0 0px 2px 0;
+            }
+          }
+        }
+        .btn_green {
+          img {
+            margin:0 2px 2px 0;
+            @include mQ($sm) {
+              height: 14px;
+              margin:0 0px 2px 0;
+            }
+          }
+        }
+    }
+}
