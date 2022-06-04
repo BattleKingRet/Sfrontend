@@ -3,7 +3,7 @@
         width: 100%;
         padding: 30px;
         margin-top: 60px;
-        background: linear-gradient(180.65deg, #A8E3C3 0.6%, #FFFFFF 99.49%);
+        background: linear-gradient(236.03deg, #22C16C 11.27%, #0A9C4D 96.53%)
  
     }
     .footer2{
@@ -133,7 +133,7 @@
         padding: 10px;
         // border: 2px solid black;
         margin-top: 80px;
-        background: linear-gradient(180.65deg, #A8E3C3 0.6%, #FFFFFF 99.49%);
+        background: black;
         ;
     }
     .footer2{
@@ -169,6 +169,23 @@
         padding: 4px;
         // border: 2px solid black;
     }
+    
+        .createOwn {
+            border: 1px solid #81cd47;
+            border-radius: 40px;
+            color: var(--dark-1);
+            padding: 10px 30px;
+
+            @include mQ($sm) {
+                padding: 10px 10px;
+            }
+
+            @include mQ($lg) {
+                margin-right: 4px;
+                padding: 10px 12px;
+            }
+        }
+    
     .content p{
         font-style: normal;
         font-size: 12px;

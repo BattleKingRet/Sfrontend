@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col,Button } from "react-bootstrap";
-import imageOne from "../../assets/images/homeBottom.svg";
 import { NavLink } from "react-router-dom";
+import imageOne from "../../assets/images/homeBottom.svg";
 
-const HomeBottomInfo = () => {
+const Search = () => {
     return (
         <div className="home-bottom-info">
             <Container className="home-bottom-container">
@@ -12,11 +12,12 @@ const HomeBottomInfo = () => {
                         <img src={imageOne} alt="home"/>
                     </Col>
                     <Col xs={12} sm={12} lg={6} className="home-bottom-col-2">
-                        <div className="home-bottom-top"><h1>Learn About Stock Market</h1>
-                        <NavLink to="/learn">
-                        <Button className="btn-primary btn_green btn-signUp">Now</Button></NavLink></div>
-                        
-                       
+                        <div className="home-bottom-top"><h1>Search stocks</h1></div>
+                        <div className="home-bottom-mid"><h2>Go to search page</h2></div>
+
+                        <NavLink to="/search">
+                        <Button className="btn-primary btn_green btn-signUp">Now</Button>
+                        </NavLink>
                     </Col>
                 </Row>
             </Container>
@@ -24,4 +25,4 @@ const HomeBottomInfo = () => {
     );
 };
 
-export default HomeBottomInfo;
+export default Search;

@@ -3,14 +3,16 @@ import {Helmet} from "react-helmet";
 
 // components
 import Hero from "../../Components/Hero/Hero";
+import Search from "../../Components/Search/Search";
 import Explore from "../../Components/Explore/Explore";
-import WalletSupport from "../../Components/WalletSupport/WalletSupport";
+import Browse from "../../Components/Browse/WalletSupport";
 import LiveAuctions from "../../Components/LiveAuctions/LiveAuctions";
 import TopCollection from "../../Components/TopCollection/TopCollection";
 import PopularCollection from "../../Components/PopularCollection/PopularCollection";
 import TodaysPick from "../../Components/TodaysPick/TodaysPick";
 import NFTReview from "../../Components/NFTReview/NFTReview";
 import HomeBottomInfo from "../../Components/HomeBottomInfo/HomeBottomInfo";
+
 
 const Home = () => {
   return (
@@ -22,19 +24,19 @@ const Home = () => {
       {/* hero section */}
       <Hero/>
       {/* explore section */}
-      <Explore/>
+      <Search/>
       {/* wallet we support */}
-      <WalletSupport/>
+      <Browse/>
       {/* live action */}
-      <LiveAuctions/>
+      {/* <LiveAuctions/> */}
       {/* top collection */}
-      <TopCollection/>
+      {/* <TopCollection/> */}
       {/* popular collection */}
-      <PopularCollection/>
+      {/* <PopularCollection/> */}
       {/* Todays Pick */}
-      <TodaysPick/>
+      {/* <TodaysPick/> */}
       {/* NFT review */}
-      <NFTReview/>
+      {/* <NFTReview/> */}
       <HomeBottomInfo/>
     </div>
   )

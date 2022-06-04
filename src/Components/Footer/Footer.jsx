@@ -1,10 +1,10 @@
 import React from 'react';
-import {Container,Row,Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-const Footer = ({theme}) => {
+const Footer = ({ theme }) => {
   return (
-   <>
-   {theme==="light"?(
+    <>
+      {/*theme==="light"?(
       <div className='footer1'>
       <div className="flexbox">
 
@@ -24,15 +24,14 @@ const Footer = ({theme}) => {
           </div>
         </div>
         <div className='flex2'>
-          <h3>Market Place</h3>
+          <h3>Resources</h3>
           <div className='list'>
-            <p>All NFTs</p>
-            <p>New</p>
-            <p>Art</p>
-            <p>Sports</p>
-            <p>Utility</p>
-            <p>Music</p>
-            <p>Domain Name</p>
+            <p>Academy</p>
+            <p>Blog</p>
+            <p>Theme</p>
+            <p>Hosting</p>
+            <p>Developers</p>
+            <p>Support</p>
           </div>
         </div>
         <div className='flex3'>
@@ -49,7 +48,7 @@ const Footer = ({theme}) => {
           <p>
           Join our mailing list to stay in the loop with our newest <br /> feature releases, NFT drops, and tips and tricks for <br /> navigating NFTs.
           </p>
-          <div className='inputfield'>
+          {/*<div className='inputfield'>
             <div className='emailbox'>
               <input type="email" name="email" id="email" placeholder='Enter your email address'/>
               <input type="button" value="Suscribe Now" />
@@ -58,7 +57,7 @@ const Footer = ({theme}) => {
               <h3>Language</h3>
               <input type="text" name="lang" id="lang" placeholder='English'/>
             </div>
-          </div>
+          </div>}
         </div>
         
       </div>
@@ -126,8 +125,67 @@ const Footer = ({theme}) => {
     Copyright © 2022 Siddharth Patel
     </p>
   </div>
-   )}
-   </>
+   )*/}
+      <div className='footer1'>
+        <div className='flexbox'>
+          
+          <div>
+            <h3>Have a Good portfolio</h3>
+            <h3>Predict Today</h3>
+            <p>High level prediction in stock</p>
+            <p > Get Started</p>
+            </div>
+            <div className='flex2'>
+              <h3>Resources</h3>
+              <div className='list'>
+                <p>Academy</p>
+                <p>Blog</p>
+                <p>Theme</p>
+                <p>Hosting</p>
+                <p>Developers</p>
+                <p>Support</p>
+              </div>
+            </div>
+            <div className='flex3'>
+              <h3>My Account</h3>
+              <div className='list'>
+                <p>Profile</p>
+                <p>Favourite</p>
+                <p>My Collections</p>
+                <p>Settings</p>
+              </div>
+            </div>
+            <div className='flex3'>
+              <h3>My Account</h3>
+              <div className='list'>
+                <p>Profile</p>
+                <p>Favourite</p>
+                <p>My Collections</p>
+                <p>Settings</p>
+              </div>
+            </div>
+            <div className='flex3'>
+              <h3>Company</h3>
+              <div className='list'>
+                <p>About us</p>
+                <p>Contact us</p>
+                
+              </div>
+            </div>
+          </div>
+          
+    
+    <div className='copyright'>
+      
+            <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="facebook" />
+            <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="twitter" />
+            <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" alt="linkedin" />
+            </div>
+    
+        </div>
+      
+
+    </>
   )
 }
 

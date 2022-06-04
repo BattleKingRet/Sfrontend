@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import flowerRing from "../../assets/images/flower-ring.svg";
 import Carousel from "react-material-ui-carousel";
 
@@ -22,9 +23,10 @@ const Hero = () => {
                             <h2>
                             Stock Monkey - Now Predict Stock Prices based on machine Learning 
                             </h2>
+                            <NavLink to="predict">
                             <div className="hero-left-btns">
                                 <div className="createOwn">Predict Now</div>
-                            </div>
+                            </div></NavLink>
                         </div>
                     </Col> 
                     {/* carousel slider */}
