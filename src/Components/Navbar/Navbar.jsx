@@ -51,10 +51,13 @@ const Navbar = ({ changeTheme, theme }) => {
                                     <NavLink to="/">Home</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/explore">Predict</NavLink>
+                                    <NavLink to="/browse">Browse</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="/about">About</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/learn">Learn</NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -64,9 +67,11 @@ const Navbar = ({ changeTheme, theme }) => {
                             <input type="search" placeholder="Search" />
                         </div>
                         <div className="right-menu">
+                            
                             <div className="account-btn">
+                            <NavLink to="/predict">
                                 <div className="create">Predict</div>
-                                
+                                </NavLink>
                                 <img
                                     src={accountLogo}
                                     className="account"
