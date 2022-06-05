@@ -13,6 +13,8 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About"
 import TopNft from "./Pages/TopNft/TopNft";
+import Learn from "./Pages/Learn/Learn"
+
 
 const App = () => {
   // theme
@@ -32,8 +34,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path='/about' element={<About theme={theme}/>}  />
-
+        <Route path='/learn' element={<Learn theme={theme}/>}  />
         <Route path="/trending-nfts" element={<TopNft/>} />
+        
       </Routes>
       <Footer theme={theme}/>
     </BrowserRouter>
