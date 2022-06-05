@@ -156,12 +156,12 @@ const Footer = ({ theme }) => {
               </div>
             </div>
             <div className='flex3'>
-              <h3>My Account</h3>
+              <h3>Use cases</h3>
               <div className='list'>
-                <p>Profile</p>
-                <p>Favourite</p>
-                <p>My Collections</p>
-                <p>Settings</p>
+                <p>Web Designers</p>
+                <p>Marketers</p>
+                <p>Small Business</p>
+                <p>Website Builder</p>
               </div>
             </div>
             <div className='flex3'>
