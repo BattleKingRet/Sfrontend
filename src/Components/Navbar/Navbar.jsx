@@ -4,7 +4,7 @@ import accountLogo from "../../assets/images/accountLogo.svg";
 import accountDark from "../../assets/images/accountDark.svg";
 import searchLogo from "../../assets/images/searchLogo.svg";
 import Grid from "@mui/material/Grid";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Container, Row, Col,Button } from "react-bootstrap";
 
 
@@ -41,9 +41,9 @@ const Navbar = ({ changeTheme, theme }) => {
                 <Row>
                 
                     <div className={`navbar-desktop ${stickyClass}`}>
-                        <div className="logo">
+                        <Link to="/" className="logo">
                             <img src={LOGO} alt="stockmonkey Logo" />
-                        </div>
+                        </Link>
 
                         <div className="right-menu">
                             <ul>
@@ -69,8 +69,8 @@ const Navbar = ({ changeTheme, theme }) => {
                         <div className="right-menu">
                             
                             <div className="account-btn">
-                            <NavLink to="/predict">
-                                <div className="create">Predict</div>
+                            <NavLink to="/browse">
+                                <button className="create">Predict</button>
                                 </NavLink>
                                 <img
                                     src={accountLogo}

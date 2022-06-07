@@ -1,0 +1,32 @@
+.search-container {
+  min-height: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.search-column  {
+  @include displayFlex(center,center);
+  flex-direction: column;
+  input{
+    background: #3FBFA0;
+    border: 5px solid #FFFFFF;
+    color:white;
+    padding-left:8px;
+    border-radius: 40px;
+    width:400px;
+    margin-bottom: 20px;
+  }
+  input::placeholder {
+    color:white;
+    padding-left:8px;
+  }
+  .predict {
+    border-radius: 40px;
+    background-color: black !important;
+    color:#3FBFA0;
+    padding:6px 24px;
+  }
+}

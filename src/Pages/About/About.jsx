@@ -1,8 +1,13 @@
 import React from "react";
+import {Helmet} from 'react-helmet';
+
 const About = ({theme}) => {
   console.log(theme);
   return (
     <div className="aboutgemx">
+    <Helmet>
+        <title>StockMonkey | About</title>
+      </Helmet>
       {theme==="light" ? (
         <>
           <h1>About StockMonkey</h1>
